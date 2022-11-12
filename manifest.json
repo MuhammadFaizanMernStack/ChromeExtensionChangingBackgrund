@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "changeBackground",
+  "description": "Add a custon Background to Google.com",
+  "version": "1.0",
+  "icons": {
+    "16": "./images/16x16.png",
+    "48": "./images/48x48.png",
+    "128": "./images/128x128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "./images/16x16.png",
+      "48": "./images/48x48.png",
+      "128": "./images/128x128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "css": ["./main.css"]
+    }
+  ]
+}
